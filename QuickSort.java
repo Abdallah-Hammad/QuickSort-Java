@@ -69,9 +69,7 @@ class Main {
         int s = 0;
         if (l < r) {
             s = Hoare(arr, l, r, piv);
-            // if (unsorted(arr, l, s - 1))
             quicksort(arr, l, s - 1, pivot, 2);
-            // if (unsorted(arr, s + 1, r))
             quicksort(arr, s + 1, r, pivot, 2);
 
         }
